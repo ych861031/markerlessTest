@@ -32,10 +32,10 @@ public class webCamScript : MonoBehaviour {
     void Update()
     {
         Quaternion cameraRotation = new Quaternion(Input.gyro.attitude.x, Input.gyro.attitude.y, -Input.gyro.attitude.z, -Input.gyro.attitude.w);
-        print(Input.gyro.attitude.x);
-        print(Input.gyro.attitude.y);
-        print(-Input.gyro.attitude.z);
-        print(-Input.gyro.attitude.w);
+        //print(Input.gyro.attitude.x);
+        //print(Input.gyro.attitude.y);
+        //print(-Input.gyro.attitude.z);
+        //print(-Input.gyro.attitude.w);
 
         this.transform.localRotation = cameraRotation;
     }
